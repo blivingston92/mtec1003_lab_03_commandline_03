@@ -36,7 +36,8 @@ $ touch foo.txt
 $ ls
 Copy and paste the output below.
 ----------
-
+touch foo.txt
+foo.txt
 
 
 ==========
@@ -44,7 +45,7 @@ Copy and paste the output below.
 
 $ touch bar.txt
 ----------
-
+bar.txt	foo.txt
 
 
 ==========
@@ -52,7 +53,9 @@ $ touch bar.txt
 
 Copy and paste the output below.
 ----------
-
+ls -lt
+-rw-r--r--  1 student  staff  0 Feb 20 15:54 bar.txt
+-rw-r--r--  1 student  staff  0 Feb 20 15:53 foo.txt
 
 
 ==========
@@ -61,7 +64,8 @@ Copy and paste the output below.
 
 Write the command that you used to copy the file.  Additionally, copy and paste the output of your file listing below.
 ----------
-
+cp bar.txt baz.txt
+bar.txt	baz.txt	foo.txt
 
 
 ==========
@@ -69,13 +73,15 @@ Write the command that you used to copy the file.  Additionally, copy and paste 
 
 Write the command that you used to remove the file.  Copy and paste the output of your file listing below.
 ----------
+rm -rf bar.txt
+
 ==========
 11. Move the file called foo.txt to qux.txt and then list the files again.
 
 
 Write the command that you used to move the file.  Copy and paste the output of your file listing below.
 ----------
-
+baz.txt	qux.txt
 
 
 ==========
@@ -98,8 +104,8 @@ Write out the command that you used and what happened.
 
 Write out the command that you used and what happened.
 ----------
-
-
+rm dir my_files
+It says the directory is not empty.
 
 ==========
 15. MAKE SURE YOU'RE IN THE mtec1003-lab-03 directory!  
@@ -120,7 +126,7 @@ Use the command called cat on the file to show its contents.
 
 Describe what happened below.
 ----------
-
+It showed the entire document from www.gutenberg.org. I believe it is regarding machiavelli.
 
 
 ==========
@@ -133,7 +139,7 @@ Use the command, head, on the file to show the contents of the beginning of the 
 Write the command that you used below.  Write the last line of the output below (it should be the title).
 ----------
 
-
+Title: The Prince.
 
 ==========
 18. Using the same file again!
@@ -145,7 +151,7 @@ Use tail on the file to show the contents of the end of the file.
 Write the command that you used below.  Write the last line of the output below.
 ----------
 
-
+subscribe to our email newsletter to hear about new eBooks.
 
 ==========
 19. Using the same file...
@@ -156,7 +162,7 @@ Use less and more on the file to show the contents of the file.  Try pressing sp
 
 Write the command that you used below.  Describe what spacebar and q does after using either less or more.
 ----------
-
+It shows you the whole document and spacebar jumps by page almost. The letter q quits this reader format whether you are in less or more.
 
 
 ==========
@@ -164,19 +170,19 @@ Write the command that you used below.  Describe what spacebar and q does after 
 
 (Some characteristics that may help your description might be the length of the file, whether or not you'd like to read the whole thing... or just the beginning or end, etc.)
 ----------
-
+less and more would be used to read the text like a book. Head would be used if I wanted to start from the beginning and I was just going to open the file and I didn't want to scroll down. Tail would be if I wanted to start from the end and I didn't want to scroll down from the middle or top.
 
 
 ==========
 21.  How many words are in pg1232.txt?  What command did you use to determine the word count?
 ----------
-
+wc -w books/other/pg1232.txt 
 
 
 ==========
 22.  How many lines are in pg1232.txt?  What command did you use to determine the line count?
 ----------
-
+5063
 
 ==========
 23.  Make sure you're in the books/other folder.  Copy all of the txt files from that folder to your home directory using wildcard matching.
