@@ -69,14 +69,14 @@ This command should have a *flag* to specify the output file.  MAKE SURE TO NAME
 Write the command(s) that you used to download this file - as well as its output - below:
 ----------
 
-curl -o mtec1003-lab-03.tar.gz.text http://entertainmenttechnology.github.io/Wilson-MTEC1003/labs/03/mtec1003-lab-03.tar.gz.com
+curl -o mtec1003-lab-03.tar.gz http://entertainmenttechnology.github.io/Wilson-MTEC1003/labs/03/mtec1003-lab-03.tar.gz
 
 ==========
 7.  Uncompress the file that you just downloaded.
 
 Write the command(s) that you used to do this - as well as its output - below:
 ----------
-
+tar -xvf mtec1003-lab-03.tar.gz
 
 
 ==========
@@ -91,6 +91,21 @@ Otherwise...
 
 Write the command(s) that you used to do this - as well as its output - below:
 ----------
+ls
+
+Adlm				QLData
+Adobe				Things
+Applications			ipe.properties
+Desktop				isus
+Documents			mtec1002
+Downloads			mtec1002-lab-02
+Library				mtec1003-lab-03
+MPLABXProjects			mtec1003-lab-03.tar.gz
+Movies				mtec1003-lab-03.tar.gz.text
+Music				pymel.log
+New Unity Project		stuff.tar
+Pictures			xgen
+Public
 
 
 
@@ -99,7 +114,8 @@ Write the command(s) that you used to do this - as well as its output - below:
 
 Write the command(s) that you used to determine this - as well as its output - below:
 ----------
-
+cd mtec1003-lab-03
+books	logs	web
 
 
 ==========
@@ -107,7 +123,7 @@ Write the command(s) that you used to determine this - as well as its output - b
 
 Write the command(s) (including going home) that you used to do this below:
 ----------
-
+~ 
 
 
 ==========
